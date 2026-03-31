@@ -4,7 +4,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 class SentimentEngine:
     def __init__(self):
         self.analyzer = SentimentIntensityAnalyzer()
-        self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+        self.headers = {"User-Agent": "python:macro_stress_project:v1.0 (by /u/VedantArora_DU)"}
 
     def fetch_reddit(self, subreddit):
         url = f"https://www.reddit.com/r/{subreddit}/.json?limit=50"
